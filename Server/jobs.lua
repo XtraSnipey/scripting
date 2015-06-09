@@ -9,7 +9,7 @@ function JobGui:__init()
 	
 	-- Connect to the MySQL server, and grab the connection, and the error.
 	-- (database[, username[, password[, hostname[, port]]]]), [] = optional
-	local connection, err = connector:connect("jc2mp", "root", "Xzibit101", "localhost", 6969)
+	local connection, err = connector:connect("jc2mp", "user", "pass", "host", port)
 	
 	-- There is an error, print it and exit module
 	if err ~= nil then
